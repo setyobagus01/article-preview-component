@@ -8,7 +8,7 @@ const shareActive = document.querySelector(".share-fill");
 
 // Event Listener
 share.addEventListener("click", (e) => {
-  // Mobile action
+  //  Mobile action
   writer.classList.toggle("writer-active");
   writerContainer.classList.toggle("writer-wrapper-toggle");
   shareContent.classList.toggle("share-active");
@@ -16,4 +16,5 @@ share.addEventListener("click", (e) => {
   shareActive.classList.toggle("fill-active");
 
   //   Desktop Action
+  shareContent.classList.toggle("share-desktop");
 });
