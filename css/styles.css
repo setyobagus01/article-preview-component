@@ -38,6 +38,7 @@ body {
   margin: auto;
   border-radius: 10px;
   background: white;
+  box-shadow: 5px 5px 30px 1px hsl(212, 23%, 69%);
 }
 
 .card-img {
