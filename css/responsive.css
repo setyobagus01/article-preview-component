@@ -1,46 +1,38 @@
-@media (min-width: 1040px) {
+/* Mobile */
+
+@media (min-width: 640px) {
   .card-container {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    min-height: 37vh;
-  }
-
-  .card-img {
-    width: 40%;
-    height: 37vh;
-    object-position: left;
-    border-radius: 10px 0 0px 10px;
-  }
-
-  .content-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    width: 75%;
+    min-height: 50vh;
   }
 
   .content-container {
-    min-height: 23vh;
-    display: flex;
-    margin: 0;
+    min-height: 20vh;
   }
 
   .content-title {
-    font-size: 1.23rem;
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
   }
 
-  .writer-wrapper {
-    height: 10vh;
+  .content {
+    font-size: 0.9rem;
   }
 
   .writer {
-    width: 47%;
+    width: 45%;
+  }
+
+  .share-container {
+    width: 75%;
+  }
+
+  .icon-wrapper {
+    width: 30%;
+    margin-left: 2rem;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1000px) {
   /* Toggle */
   .writer-active {
     display: none;
@@ -57,10 +49,160 @@
 
   .share-wrapper-toggle {
     margin-right: auto;
-    background-color: hsl(214, 17%, 51%);
+  }
+}
+
+/* End Mobile */
+
+/* Desktop */
+
+@media (min-width: 1000px) {
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    min-height: 35vh;
   }
 
-  .fill-active {
-    fill: hsl(210, 46%, 95%);
+  .card-img {
+    width: 40%;
+    min-height: 40vh;
+    object-position: left;
+    border-radius: 10px 0 0px 10px;
   }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .content-container {
+    min-height: 25vh;
+    display: flex;
+    margin: 0;
+  }
+
+  .content-title {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .content {
+    font-size: 1rem;
+  }
+
+  .writer-wrapper {
+    min-height: 10vh;
+  }
+
+  .writer {
+    width: 48%;
+  }
+
+  .writer-name {
+    font-size: 0.9rem;
+  }
+
+  .share-wrapper {
+    padding: 12px 12px 10px 12px;
+  }
+
+  /* Toggle */
+
+  .share {
+    display: inline-block;
+    width: 25%;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .share-desktop {
+    background: hsl(217, 19%, 35%);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    border-radius: 10px;
+    height: 7vh;
+    right: 4vw;
+    bottom: 40%;
+  }
+
+  .share-desktop::after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: hsl(217, 19%, 35%);
+    margin: 0 auto;
+    transform: rotate(225deg);
+    border-radius: 0 0 12px 0;
+    margin-top: -22px;
+    position: absolute;
+    bottom: -0.4rem;
+    right: 0;
+    left: 0;
+  }
+
+  .icon-wrapper {
+    width: 38%;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card-container {
+    width: 70%;
+  }
+
+  .writer {
+    width: 42%;
+  }
+
+  .content-container {
+    min-height: 30vh;
+  }
+
+  /* Toggle */
+  .share-desktop {
+    right: 10.6vw;
+  }
+}
+
+@media (min-width: 1670px) {
+  .card-container {
+    width: 48%;
+  }
+
+  .content-container {
+    min-height: 25vh;
+  }
+
+  .writer-wrapper {
+    min-height: 10vh;
+  }
+
+  .writer {
+    width: 45%;
+  }
+
+  .share-desktop {
+    width: 15%;
+    right: 22.4vw;
+    bottom: 42%;
+  }
+}
+
+/* End Desktop */
+
+/* Share Button Toggle */
+
+.fill-active {
+  fill: hsl(210, 46%, 95%);
+}
+
+.share-wrapper-toggle {
+  background-color: hsl(214, 17%, 51%);
 }
